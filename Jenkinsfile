@@ -8,6 +8,7 @@ node () {
 	stage ('SBA_python_flask - Build') {
 
 sh """
+python3 -m pip install --upgrade pip
 python3 web.py
  """
 	}
