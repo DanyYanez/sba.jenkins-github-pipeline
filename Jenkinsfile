@@ -8,7 +8,7 @@ node () {
 	stage ('SBA_python_flask - Build') {
 
 sh """
-apt install python3
+sudo apt install python3
 python3 web.py
  """
 	}
