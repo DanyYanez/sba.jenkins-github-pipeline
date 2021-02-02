@@ -8,7 +8,7 @@ node () {
 	stage ('SBA_python_flask - Build') {
 
 sh """
-python3 web.py
+python web.py
  """
 	}
 }
