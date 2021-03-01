@@ -9,7 +9,7 @@ node () {
 
 sh """
 cd ~
-kind create cluster --name final-project --config kubernetes.yaml
+kind create cluster --name pipeline-project --config kubernetes.yaml
 kind load docker-image danyyanez/sba_kuber
 #python3 web.py
  """
