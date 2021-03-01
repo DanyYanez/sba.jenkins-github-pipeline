@@ -8,6 +8,7 @@ node () {
 	stage ('SBA_python_flask - Build') {
 
 sh """
+cd ~
 kind create cluster --name final-project --config kind-config.yaml
 kind load docker-image danyyanez/sba_kuber
 #python3 web.py
