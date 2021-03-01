@@ -9,6 +9,7 @@ node () {
 
 sh """
 python3 web.py
+sleep 1
  """
 	}
 }
