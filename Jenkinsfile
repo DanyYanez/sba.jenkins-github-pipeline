@@ -8,8 +8,9 @@ node () {
 	stage ('SBA_python_flask - Build') {
 
 sh """
-kubectl exec --stdin --tty flaskapp-5ff668455-kr584 -- /bin/bash
-python3 web.py
+kind create cluster --name final-project --config kind-config.yaml
+kind load docker-image danyyanez/sba_kuber
+#python3 web.py
  """
 	}
 }
